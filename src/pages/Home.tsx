@@ -9,11 +9,11 @@ import Contact from './Contact';
 export default function Home() {
   return (
     <>
-    <div className='flex flex-col md:flex-row items-center mx-auto my-50 gap-3 md:gap-15 '>
+    <div className='flex flex-col md:flex-row items-center mx-auto my-40 gap-3 md:gap-15 '>
       {/* جزء الصورة */}
       <div className="w-97 h-97">
         <img
-          className="mx-auto w-80 h-80 md:w-full md:h-full rounded-full object-cover"
+          className="mx-auto w-65 h-65 md:w-full md:h-full rounded-full object-cover"
           src={myimg}
           alt="Ahmed Samer"
         />
@@ -22,8 +22,8 @@ export default function Home() {
       {/* جزء العنوان */}
       <div className='flex flex-col items-center gap-2.5'>
         <p className="text-sm font-medium text-gray-800">Hello, I'm</p>
-        <p className="text-5xl font-bold text-black">Ahmed Samer</p>
-        <p className="mt-3 text-2xl font-semibold text-gray-600">Frontend Developer</p>
+        <p className="text-4xl sm:text-5xl font-bold text-black">Ahmed Samer</p>
+        <p className="mt-3 text-xl sm:text-2xl font-semibold text-gray-600">Frontend Developer</p>
         {/* دا جزء الزراير */}
         <div className=' flex gap-3'>
         <a
