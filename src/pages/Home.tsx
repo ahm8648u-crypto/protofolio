@@ -9,7 +9,7 @@ import Contact from './Contact';
 export default function Home() {
   return (
     <>
-    <div className='flex flex-col md:flex-row items-center mx-auto my-10 sm:my-40 -gap-40 md:gap-15 mr-20'>
+    <div className='flex flex-col md:flex-row items-center mx-auto my-10 sm:my-40 -gap-40 md:gap-15 sm:pr-0 pr-200'>
       {/* جزء الصورة */}
       <div className="w-97 h-97">
         <img

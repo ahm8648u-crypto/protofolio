@@ -2,8 +2,16 @@ import { useState } from "react"
 import proj from '../image/proj.png'
 import { HiOutlineLink } from "react-icons/hi";
 import { FaRegCheckCircle } from "react-icons/fa";
+import proto from '../image/mos.png'
 
-function ProjectCard({ title, type, link }: { title: string; type: string; link: string }) {
+type ProjectCardProps = {
+  title: string;
+  type: string;
+  link: string;
+  img: string;
+};
+
+function ProjectCard({ title, type, link, img }: ProjectCardProps) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -11,7 +19,7 @@ function ProjectCard({ title, type, link }: { title: string; type: string; link:
       className="group relative w-70 h-50 overflow-hidden rounded-2xl cursor-pointer"
       onClick={() => setOpen(!open)}
     >
-      <img className="block w-full h-full object-cover" src={proj} alt="" />
+      <img className="block w-full h-full object-cover" src={img} alt={title} />
 
       <div
         className={`absolute inset-0 bg-black/50 transition-transform duration-300 group-hover:translate-y-0 ${
@@ -48,13 +56,21 @@ export default function Experience() {
           <a className={`${base} ${active === "skill" ? "bg-white" : ""}`} onClick={() => setActive("skill")}>Skills</a>
         </div>
 
-        <div className={` ${active === "proj" ? "h-210 sm:h-150" : "h-150 sm:h-100 "}  w-150 relative overflow-hidden`}>
+        <div className={` ${active === "proj" ? "h-150 sm:h-100" : "h-80 sm:h-100 "}  w-150 relative overflow-hidden `}>
           {/* projects */}
           <div className={`grid grid-cols-1 sm:grid-cols-2 gap-3 absolute left-40 sm:left-0 ${active === "proj" ? "translate-x-0" : " -translate-x-150"} duration-500`}>
-            <ProjectCard title="E-commerce Site" type="web" link="https://ahm8648u-crypto.github.io/final-projectt/" />
-            <ProjectCard title="E-commerce Site" type="web" link="https://ahm8648u-crypto.github.io/final-projectt/" />
-            <ProjectCard title="E-commerce Site" type="web" link="https://ahm8648u-crypto.github.io/final-projectt/" />
-            <ProjectCard title="E-commerce Site" type="web" link="https://ahm8648u-crypto.github.io/final-projectt/" />
+            <ProjectCard
+              title="E-commerce Site"
+              type="web"
+              link="https://ahm8648u-crypto.github.io/final-projectt/"
+              img={proj}
+            />
+            <ProjectCard
+              title="Protofolio"
+              type="web"
+              link="https://ahm8648u-crypto.github.io/protofolio/"
+              img={proto}
+            />
           </div>
           {/* end projects */}
 
