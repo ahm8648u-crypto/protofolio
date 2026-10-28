@@ -9,11 +9,11 @@ import Contact from './Contact';
 export default function Home() {
   return (
     <>
-    <div className='flex flex-col md:flex-row items-center mx-auto my-10 sm:my-40 -gap-40 md:gap-15 '>
+    <div className='flex flex-col md:flex-row items-center mx-auto my-10 sm:my-40 -gap-40 md:gap-15 mr-20'>
       {/* جزء الصورة */}
       <div className="w-97 h-97">
         <img
-          className="mx-auto w-65 h-65 md:w-full md:h-full rounded-full object-cover mr-15"
+          className="mx-auto w-65 h-65 md:w-full md:h-full rounded-full object-cover "
           src={myimg}
           alt="Ahmed Samer"
         />
