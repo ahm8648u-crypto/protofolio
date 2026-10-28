@@ -24,8 +24,9 @@ import Projcom from './component/Projcom';
       
       ],
       
-    },
-  ]);
+      
+    } 
+  ],{ basename: import.meta.env.BASE_URL },);
 export default function App() {
 
  
