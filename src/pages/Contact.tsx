@@ -2,7 +2,7 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { MdEmail } from "react-icons/md";
 import { CiMobile1 } from "react-icons/ci";
-import { FaLocationDot, FaSignalMessenger } from "react-icons/fa6";
+import { FaLocationDot} from "react-icons/fa6";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FaFacebookMessenger } from "react-icons/fa";
