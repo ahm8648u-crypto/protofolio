@@ -8,10 +8,10 @@ import A from '../image/logo-name-2.png'
 
 export default function Nav() {
     const Linkks=[
-        {Name:'About',icon:<IoInformationCircleSharp/>,href:'/home'},
-        {Name:'Experience',icon:<LuBicepsFlexed/>,href:'/experience'},
-        {Name:'Projects',icon:<GrProjects/>,href:'/projects'},
-        {Name:'Contact',icon:<GrContact/>,href:'/contact'},
+        {Name:'About',icon:<IoInformationCircleSharp/>,href:'#con'},
+        {Name:'Experience',icon:<LuBicepsFlexed/>,href:'#ex'},
+        {Name:'Projects',icon:<GrProjects/>,href:'#ex'},
+        {Name:'Contact',icon:<GrContact/>,href:'#con'},
 
     ]
   return (

@@ -33,7 +33,7 @@ export default function Home() {
          >
          Download CV
          </a>
-         <a className="mt-6 inline-block rounded-full border   border-black text-black  px-3 py-3 font-semibold hover:text-white  transition hover:bg-black cursor-pointer" >Contact info</a>
+         <a className="mt-6 inline-block rounded-full border   border-black text-black  px-3 py-3 font-semibold hover:text-white  transition hover:bg-black cursor-pointer " href='#con'>Contact info</a>
          </div>
          {/* جزء لينكدان و وجيت هاب */}
         <div className='flex text-3xl gap-3 ml-4 mt-3'>

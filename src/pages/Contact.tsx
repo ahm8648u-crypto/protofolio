@@ -33,6 +33,7 @@ export default function Contact() {
   return (
     <>
     <div className="flex flex-col items-center gap-5 mt-10 sm:mt-0 mx-8">
+        <a href=""id="con" ></a>
         {/*عنوان  */}
         <div className="flex flex-col items-center">
             <p className="text-4xl font-bold"> Get in <span className="text-blue-600">touch</span></p>
