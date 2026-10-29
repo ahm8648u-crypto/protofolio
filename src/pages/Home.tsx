@@ -1,6 +1,6 @@
 import { FaGithub } from 'react-icons/fa'
 import { TiSocialLinkedin } from "react-icons/ti";
-
+import Ahmed from '../image/Ahmed_Samer_CV.pdf'
 import myimg from '../image/Fac.jpeg'
 
 import Experience from './Experience';
@@ -9,7 +9,7 @@ import Contact from './Contact';
 export default function Home() {
   return (
     <>
-    <div className='flex flex-col md:flex-row items-center mx-auto my-10 sm:my-40 -gap-40 md:gap-15 sm:pr-0 pr-200'>
+    <div className='flex flex-col md:flex-row items-center mx-auto my-10 sm:my-40 -gap-40 md:gap-15 sm:pr-0 relative -left-3'>
       {/* جزء الصورة */}
       <div className="w-97 h-97">
         <img
@@ -27,7 +27,7 @@ export default function Home() {
         {/* دا جزء الزراير */}
         <div className=' flex gap-3'>
         <a
-         href="/Ahmed_Samer_CV.pdf"
+         href={Ahmed}
          download="cv"
          className="mt-6 inline-block rounded-full border bg-gray-800 text-white border-black hover:text-black  px-6 py-3 font-semibold hover:bg-white  transition "
          >

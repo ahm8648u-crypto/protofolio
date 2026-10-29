@@ -2,7 +2,10 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { MdEmail } from "react-icons/md";
 import { CiMobile1 } from "react-icons/ci";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot, FaSignalMessenger } from "react-icons/fa6";
+import { TiSocialLinkedin } from "react-icons/ti";
+import { FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookMessenger } from "react-icons/fa";
 
 const SERVICE_ID = "service_45mmoxg";
 const TEMPLATE_ID = "template_dr011ji";
@@ -53,8 +56,11 @@ export default function Contact() {
             <div className="flex flex-col"><p className="text-sm text-gray-600">Location</p><p className="text-[#1E293B] font-bold text-sm">Egypt/Sharqia/Zagazig</p></div>
         </div>
     <div className="flex gap-3 ml-5">
-         <a className="px-3.5 py-2 bg-[#1E293B] text-white rounded-[50%] text-sm" href="https://www.linkedin.com/in/ahmed-samer-06a5a8317?utm_source=share_via&utm_content=profile&utm_medium=member_android">in</a>
-         <a className="px-2 py-1.5 bg-[#1E293B] text-white rounded-[50%] text-sm flex items-center" href="https://github.com/ahm8648u-crypto">GH</a>
+         <a className="px-2 py-2 bg-[#1E293B] text-white rounded-[50%] text-sm" href="https://www.linkedin.com/in/ahmed-samer-06a5a8317?utm_source=share_via&utm_content=profile&utm_medium=member_android"><TiSocialLinkedin/></a>
+         <a className="px-2 py-1.5 bg-[#1E293B] text-white rounded-[50%] text-sm flex items-center" href="https://github.com/ahm8648u-crypto"><FaGithub /></a>
+         <a className="px-2 py-1.5 bg-[#1E293B] text-white rounded-[50%] text-sm flex items-center" href="https://wa.me/201205186077"><FaWhatsapp /></a>
+         <a className="px-2 py-1.5 bg-[#1E293B] text-white rounded-[50%] text-sm flex items-center" href="https://m.me/samerahmed.megahed"><FaFacebookMessenger /></a>
+         <a className="px-2 py-1.5 bg-[#1E293B] text-white rounded-[50%] text-sm flex items-center" href="https://instagram.com/ahmed_samer0i"><FaInstagram /></a>
     </div>
         
         </div>
