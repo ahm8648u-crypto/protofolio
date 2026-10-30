@@ -12,7 +12,7 @@ export default function Links({Name,icon,href}:Tlinks) {
     <>
     <div>
         <a href={href}>
-            <div className="flex items-center">
+            <div className="flex gap-1 items-center" >
                 <span className="text-lg mr-1">{icon}</span>
                 <span className="text-xl md:text-2xl hover:text-gray-500">{Name}</span>
             

@@ -32,11 +32,12 @@ export default function Contact() {
 
   return (
     <>
+
     <div className="flex flex-col items-center gap-5 mt-10 sm:mt-0 mx-8">
-        <a href=""id="con" ></a>
         {/*عنوان  */}
         <div className="flex flex-col items-center">
-            <p className="text-4xl font-bold"> Get in <span className="text-blue-600">touch</span></p>
+
+            <p className="text-4xl font-bold"id="con"> Get in <span className="text-blue-600">touch</span></p>
             <p className="mt-3 text-gray-500">  Have a project in mind or just want to say <span className="ml-20 sm:ml-0">hi? Send me a message.</span></p>
         </div>
        
@@ -67,10 +68,10 @@ export default function Contact() {
         </div>
         {/* form*/}
        <div>
-        <form ref={formRef} onSubmit={sendEmail} className="flex flex-col shadow-2xl gap-6 p-5 w-80 h-65 rounded-2xl" action="">
+        <form ref={formRef} onSubmit={sendEmail} className="flex flex-col shadow-2xl gap-6 p-5 w-80 h-70 rounded-2xl" action="">
             <input className="border border-gray-400 p-1 rounded-lg" type="text" name="name" id="" placeholder="your name" required />
             <input className="border  border-gray-400 p-1 rounded-lg" type="email" name="email" id="" placeholder="your email" required />
-            <textarea className="border  border-gray-400 p-1 rounded-lg"  name="message" id="" placeholder="your message" required />
+            <textarea className="border  border-gray-400 p-1 rounded-lg  "  name="message" id="" placeholder="your message" required />
             <button type="submit" className="cursor-pointer w-full bg-[#1E293B] text-white rounded-2xl text-sm py-1.5">send message</button>
         </form>
 

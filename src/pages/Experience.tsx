@@ -50,9 +50,8 @@ export default function Experience() {
 
   return (
     <>
-                  <a href="ex"id="ex"></a>
 
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center gap-4" id="ex">
         <div className="mx-auto bg-gray-300 w-70 h-15 rounded-xl mt-10 md:mt-20 flex items-center justify-center gap-4">
           <a className={`${base} ${active === "proj" ? "bg-white" : ""}`} onClick={() => setActive("proj")}>Projects</a>
           <a className={`${base} ${active === "skill" ? "bg-white" : ""}`} onClick={() => setActive("skill")}>Skills</a>

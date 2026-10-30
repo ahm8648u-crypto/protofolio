@@ -1,10 +1,11 @@
-import { FaGithub } from 'react-icons/fa'
+import { FaDownload, FaGithub } from 'react-icons/fa'
 import { TiSocialLinkedin } from "react-icons/ti";
 import Ahmed from '../image/Ahmed_Samer_CV.pdf'
 import myimg from '../image/Fac.jpeg'
 
 import Experience from './Experience';
 import Contact from './Contact';
+import About from './About';
 
 export default function Home() {
   return (
@@ -29,9 +30,9 @@ export default function Home() {
         <a
          href={Ahmed}
          download="cv"
-         className="mt-6 inline-block rounded-full border bg-gray-800 text-white border-black hover:text-black  px-6 py-3 font-semibold hover:bg-white  transition "
+         className="mt-6 flex gap-2 rounded-full border bg-gray-800 text-white border-black hover:text-black  px-6 py-3 font-semibold hover:bg-white  transition "
          >
-         Download CV
+          <FaDownload/> Download CV
          </a>
          <a className="mt-6 inline-block rounded-full border   border-black text-black  px-3 py-3 font-semibold hover:text-white  transition hover:bg-black cursor-pointer " href='#con'>Contact info</a>
          </div>
@@ -63,7 +64,8 @@ export default function Home() {
       </div>
     </div>
           <Experience/>
-          <Contact/>
+          <About/>
+           <Contact/>
       
     </>
   )
