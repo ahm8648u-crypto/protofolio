@@ -16,7 +16,7 @@ export default function Nav() {
     const [open,setOpen]=useState(false);
     const Linkks=[
         {Name:'About',icon:<IoInformationCircleSharp/>,href:'#ab'},
-        {Name:'Experience',icon:<LuBicepsFlexed/>,href:'#ex'},
+        {Name:'Experience',icon:<LuBicepsFlexed/>,href:'#sk'},
         {Name:'Projects',icon:<GrProjects/>,href:'#ex'},
         {Name:'Contact',icon:<GrContact/>,href:'#con'},
 
@@ -51,20 +51,20 @@ export default function Nav() {
      
 
     </div>
-    <div className={`w-full h-screen fixed bg-[#7B808A]/50 z-98  ${open==true?"translate-x-0" : "translate-x-full"} duration-500 md:hidden`}onClick={()=>setOpen(!open)}>
+    <div className={`w-full min-h-dvh fixed bg-[#7B808A]/50 z-98  ${open==true?"translate-x-0" : "translate-x-full"} duration-500 md:hidden`}onClick={()=>setOpen(!open)}>
     <div className={` fixed top-0  w-72 h-screen bg-white z-99 shadow-lg md:hidden ${open==true?"translate-x-0" : "translate-x-full"}duration-500 px-3`} onClick={(e) => e.stopPropagation()}>
         <div className="flex border-b-2 border-gray-200 py-2 items-center" >
         <div className="px-0 py-0 rounded-[50%] bg-[#7B808A]/50 w-8 h-8 text-center flex items-center justify-center mt-2"onClick={()=>setOpen(!open)}>
-            <p className="text-white  text-xl">x</p>
+            <p className="text-white  text-xl mb-0.5">x</p>
         </div>
          <div>
       <img className="w-35 object-cover  ml-2" src={A} alt="" />
      </div>
      </div>
-        <div className="mt-10">
+        <div className="mt-10" >
         <ul className="  md:gap-7 flex gap-12 hover:bg-[#EFF6FF] flex-col md:hidden">
         {Linkkks.map((el)=>(
-            <li className="flex"onClick={()=>setOpen(!open)} key={el.href}>
+            <li className="flex w-full"onClick={()=>setOpen(!open)} key={el.href} >
                 
         <Links  {...el}/>
             </li>
@@ -72,7 +72,7 @@ export default function Nav() {
         ))}
 </ul>
      </div>
-     <div className="flex flex-col items-center gap-3 absolute bottom-20 mx-auto">
+     <div className="flex flex-col items-center gap-3 absolute bottom-3 mx-auto">
          <a
          href={Ahmed}
          download="cv"
