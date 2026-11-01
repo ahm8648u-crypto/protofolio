@@ -16,7 +16,7 @@ export default function Nav() {
     const [open,setOpen]=useState(false);
     const Linkks=[
         {Name:'About',icon:<IoInformationCircleSharp/>,href:'#ab'},
-        {Name:'Experience',icon:<LuBicepsFlexed/>,href:'#sk'},
+        {Name:'Experience',icon:<LuBicepsFlexed/>,href:'#ex'},
         {Name:'Projects',icon:<GrProjects/>,href:'#ex'},
         {Name:'Contact',icon:<GrContact/>,href:'#con'},
 
@@ -30,7 +30,7 @@ export default function Nav() {
     ]
   return (
     <>
-    <div className="flex  md:mx-auto  items-center sm:gap-30 md:gap-20 justify-between sticky top-0  xl:gap-90 bg-white shadow  w-full md:w-max pr-3 z-90 " >
+    <div className="flex  md:mx-auto  items-center sm:gap-30 md:gap-20 justify-between sticky top-0  xl:gap-90 bg-white shadow  default:w-full  pr-3 z-90 " >
      {/* جزء الاسم */}
      <div>
       <img className="w-40 object-cover md:w-50 ml-2" src={A} alt="" />

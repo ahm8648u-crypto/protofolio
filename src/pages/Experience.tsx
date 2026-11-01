@@ -18,6 +18,7 @@ function ProjectCard({ title, type, link, img }: ProjectCardProps) {
     <div
       className="group relative w-70 h-50 overflow-hidden rounded-2xl cursor-pointer"
       onClick={() => setOpen(!open)}
+      id="ex"
     >
       <img className="block w-full h-full object-cover" src={img} alt={title} />
 

@@ -1,6 +1,6 @@
 import { FaDownload, FaGithub } from 'react-icons/fa'
 import { TiSocialLinkedin } from "react-icons/ti";
-import Ahmed from '../image/Ahmed_Samer_CV.pdf'
+import Ahmed from '../image/Ahmed_Samer_Front_End_CV_Updated-2.pdf'
 import myimg from '../image/Fac.jpeg'
 
 import Experience from './Experience';
